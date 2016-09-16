@@ -28,7 +28,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-[tipper ios app](http://i.imgur.com/JW62FA8.gifv)
+<img src='http://i.imgur.com/JW62FA8.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 ## Notes
 
