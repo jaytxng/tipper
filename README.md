@@ -21,6 +21,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
+- [x] added a launch screen before showing the core view of the app
 - [x] Changed back button color on SettingsViewController
 - [x] Programatically changing title color on navigationBar
 
