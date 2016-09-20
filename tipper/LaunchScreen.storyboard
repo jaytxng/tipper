@@ -18,23 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TIPPER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv1-ew-v3d">
-                                <frame key="frameInset" minX="123" minY="314" width="114" height="38"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIPPER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv1-ew-v3d">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="eTb-bf-O19"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                 <color key="textColor" red="0.30918344350961541" green="0.30768980368589743" blue="0.31067708333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jCK-6e-SXc" appends="YES" id="yZg-D4-UBB"/>
+                                </connections>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Xv1-ew-v3d" firstAttribute="centerX" secondItem="GeD-y9-9PQ" secondAttribute="centerX" id="OV4-OT-MCd"/>
-                            <constraint firstItem="Xv1-ew-v3d" firstAttribute="centerY" secondItem="GeD-y9-9PQ" secondAttribute="centerY" id="Xjf-Dk-Vpw"/>
-                            <constraint firstItem="Xv1-ew-v3d" firstAttribute="centerY" secondItem="GeD-y9-9PQ" secondAttribute="centerY" id="daL-tH-Qpa"/>
-                            <constraint firstItem="Xv1-ew-v3d" firstAttribute="centerX" secondItem="GeD-y9-9PQ" secondAttribute="centerX" id="tiE-TL-jCs"/>
+                            <constraint firstItem="Xv1-ew-v3d" firstAttribute="top" secondItem="KrC-Xc-IW1" secondAttribute="bottom" constant="294" id="LAw-fw-Hde"/>
+                            <constraint firstItem="Xv1-ew-v3d" firstAttribute="centerY" secondItem="GeD-y9-9PQ" secondAttribute="centerY" id="Zt8-8d-Bqr"/>
+                            <constraint firstItem="Xv1-ew-v3d" firstAttribute="leading" secondItem="GeD-y9-9PQ" secondAttribute="leading" constant="123" id="yjX-ua-ZcG"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSh-kU-wBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jCK-6e-SXc"/>
             </objects>
             <point key="canvasLocation" x="37.600000000000001" y="152.47376311844079"/>
         </scene>

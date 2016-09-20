@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var billName: UILabel!
+    @IBOutlet weak var tipName: UILabel!
+    @IBOutlet weak var totalName: UILabel!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
@@ -55,15 +58,28 @@ class ViewController: UIViewController {
         calculateTip(self)
         
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+
+        billName.center.x  -= view.bounds.width
+        tipName.center.x  -= view.bounds.width
+        totalName.center.x  -= view.bounds.width
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.billField.becomeFirstResponder()
+        
+        UIView.animate(withDuration: 0.1, delay: 0.0, options: [.curveEaseOut], animations: {
+                self.billName.center.x += self.view.bounds.width
+                self.tipName.center.x += self.view.bounds.width
+                self.totalName.center.x += self.view.bounds.width
+                }, completion: nil)
+
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {

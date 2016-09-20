@@ -35,7 +35,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.074509803920000006" green="0.58823529409999997" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gKy-hr-j6L">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gKy-hr-j6L" customClass="billLabel">
                                 <frame key="frameInset" minX="19" minY="110" width="80" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -97,9 +97,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="QwY-MR-OSs" id="3ER-Ss-ycT"/>
+                        <outlet property="billName" destination="gKy-hr-j6L" id="EKl-bL-asK"/>
                         <outlet property="tipControl" destination="BZh-S6-waM" id="JWk-0w-0QC"/>
                         <outlet property="tipLabel" destination="apN-Gy-G6D" id="mao-x6-e1O"/>
+                        <outlet property="tipName" destination="ucp-MK-dXr" id="mIo-tE-xZ1"/>
                         <outlet property="totalLabel" destination="e0S-2e-LDx" id="OaO-Pj-jHH"/>
+                        <outlet property="totalName" destination="IMl-xW-BuK" id="NS3-H1-49O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -109,7 +112,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="613.5" y="405.5"/>
+            <point key="canvasLocation" x="1141" y="406"/>
         </scene>
         <!--Settings-->
         <scene sceneID="9vj-HM-sgq">
@@ -149,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0KN-i3-pEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1026.5" y="404.5"/>
+            <point key="canvasLocation" x="1630" y="406"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Uea-M0-7St">
