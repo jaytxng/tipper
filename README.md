@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-[tipper ios video](http://imgur.com/DWTg9i6.gifv)
+![tipper ios video](http://imgur.com/DWTg9i6.gif)
 
 ## Notes
 
